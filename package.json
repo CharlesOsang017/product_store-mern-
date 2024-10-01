@@ -2,12 +2,12 @@
   "name": "mern_store",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
   "scripts": {   
     "dev": "nodemon backend/server.js",
-    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "node backend/server.js"
-  },
-  "type": "module",
+    "start": "node backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
+  },  
   "keywords": [],
   "author": "",
   "license": "ISC",
