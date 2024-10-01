@@ -5,11 +5,13 @@ import productRoutes from "./routes/product.route.js";
 import path from "path";
 
 dotenv.config();
+// deployment setup
+const __dirname = path.resolve();
+
 
 const app = express();
 const port = process.env.PORT;
-// deployment setup
-const __dirname = path.resolve();
+
 
 // middleware
 app.use(express.json()); // allows JSON data to be accepted in the req.body
